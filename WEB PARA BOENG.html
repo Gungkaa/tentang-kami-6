@@ -1,0 +1,715 @@
+
+<!-- saved from url=(0036)file:///D:/Tentang%20kami/index.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEB PARA BOENG</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        nav {
+            background: #111;
+            padding: 18px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d9ff;
+        }
+
+
+        /* =========================
+           HERO / BACKGROUND
+        ========================== */
+
+        .hero {
+
+            min-height: 90vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 40px 20px;
+
+            /* FOTO BACKGROUND */
+
+            background-image:
+
+                linear-gradient(
+                    rgba(0, 0, 0, 0.60),
+                    rgba(0, 0, 0, 0.60)
+                ),
+
+                url("foto2.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
+        }
+
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+
+        /* =========================
+           FOTO PROFIL
+        ========================== */
+
+        .profile {
+
+            width: 190px;
+            height: 190px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            margin-bottom: 25px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* =========================
+           JUDUL
+        ========================== */
+
+        .hero h1 {
+
+            font-size: 50px;
+
+            margin-bottom: 15px;
+
+            text-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.7);
+        }
+
+
+        .hero p {
+
+            font-size: 20px;
+
+            margin-bottom: 30px;
+
+            text-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================== */
+
+        .btn {
+
+            display: inline-block;
+
+            background: #ffffff;
+
+            color: #111;
+
+            padding: 14px 30px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .btn:hover {
+
+            background: hsl(86, 81%, 61%);
+
+            color: white;
+
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+
+            padding: 80px 8%;
+        }
+
+
+        section h2 {
+
+            text-align: center;
+
+            font-size: 32px;
+
+            margin-bottom: 40px;
+        }
+
+
+        /* =========================
+           TENTANG
+        ========================== */
+
+        .about {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            text-align: center;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           SKILL
+        ========================== */
+
+        .skills {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 25px;
+        }
+
+
+        .skill {
+
+            background: white;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: 0.3s;
+        }
+
+
+        .skill:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+
+        .skill h3 {
+
+            color: #0072ff;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           PROJECT
+        ========================== */
+
+        .projects {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 25px;
+        }
+
+
+        .project {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: 0.3s;
+        }
+
+
+        .project:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+
+        .project h3 {
+
+            color: #0072ff;
+
+            margin-bottom: 15px;
+        }
+
+
+        .project p {
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           KONTAK
+        ========================== */
+
+        .contact {
+
+            text-align: center;
+
+            line-height: 2;
+
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            background: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+
+        /* =========================
+           RESPONSIVE HP
+        ========================== */
+
+        @media (max-width: 600px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            nav ul {
+
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+
+            .hero h1 {
+
+                font-size: 35px;
+            }
+
+
+            .hero p {
+
+                font-size: 17px;
+            }
+
+
+            .profile {
+
+                width: 150px;
+
+                height: 150px;
+            }
+
+        }
+
+    </style>
+
+
+
+
+
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <h2>Agung</h2>
+
+        <ul>
+
+            <li>
+                <a href="file:///D:/Tentang%20kami/index.html#home">Home</a>
+            </li>
+
+            <li>
+                <a href="file:///D:/Tentang%20kami/index.html#about">Tentang</a>
+            </li>
+
+            <li>
+                <a href="file:///D:/Tentang%20kami/index.html#skills">Skill</a>
+            </li>
+
+            <li>
+                <a href="file:///D:/Tentang%20kami/index.html#projects">Projek</a>
+            </li>
+
+            <li>
+                <a href="file:///D:/Tentang%20kami/index.html#contact">Kontak</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+
+            <!-- FOTO PROFIL -->
+
+            <img src="./WEB PARA BOENG_files/foto2.jpg" alt="" class="profile">
+
+
+            <h1>
+                Welcome To Web Para Boeng-boeng 👋
+            </h1>
+
+
+            <p>
+                Gamers | Cinema | Touring
+            </p>
+
+
+            <a href="file:///D:/Tentang%20kami/index.html#about" class="btn">
+                Lihat Portofolio
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TENTANG
+    ========================== -->
+
+    <section id="about">
+
+        <h2>
+            Tentang kami
+        </h2>
+
+
+        <div class="about">
+
+            <p>
+                Halo! Kami adalah Boeng Karina, Boeng Aini, Boeng Fera, Boeng Daffa, dan boeng Agung.
+                Kami Adalah kelompok Pemuda Anti Wacana 
+                Yang suka menjelajah ALAM dan WISATA
+                Dan Tujuan Selanjutnya Adalah BUKIT KABA.
+            </p>
+
+
+            <br>
+
+
+            <p>
+                WEBSITE INI MASIH DALAM TAHAP PENGEMBANGAN ,
+               INFO LEBIH LANJUT ?? NEXT DIUBDATE,
+               &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;. 
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SKILL
+    ========================== -->
+
+    <section id="skills">
+
+        <h2>
+            Skill Kami
+        </h2>
+
+
+        <div class="skills">
+
+
+            <div class="skill">
+
+                <h3>
+                    BERMAIN GAME (GAMERS)
+                </h3>
+
+                <p>
+                    Free Fire dan Mobile legends.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    MAKAN BANYAK
+                </h3>
+
+                <p>
+                    Pernah makan 2 Piring melebihi porsi kuli.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    CARI BAHAN GOSIPAN
+                </h3>
+
+                <p>
+                    Kalian Baru nyebur, Kita sudah kering.
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <h3>
+                    BISA MASAK
+                </h3>
+
+                <p>
+                    Masak mie, Dan Goreng telur.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECT
+    ========================== -->
+
+    <section id="projects">
+
+        <h2>
+            Telah selesai dikunjungi oleh kami
+
+        </h2>
+
+
+        <div class="projects">
+
+
+            <div class="project">
+
+                <h3>
+                    🌐 PAGAR ALAM
+                </h3>
+
+                <p>
+                    Dikunjungi pas Tanggal 29 juni 
+                2026 dan berjalan lancar.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    🐍 Pantai Air langkap
+                </h3>
+
+                <p>
+                    Dikunjungi pada tanggal 19 juli 
+                    2026 dan berjalan lancar.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    🎮 Pantai ceria
+                </h3>
+
+                <p>
+                    Dikunjungi pada tanggal 13 juli
+                    2026 dan Berjalan lancar.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KONTAK
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>
+            Kontak Kami
+        </h2>
+
+
+        <div class="contact">
+
+            <p>
+                📧 Email:
+                Agungkurniawan01111@gmail.com
+            </p>
+
+
+            <p>
+                📱 WhatsApp:
+                085366088451
+            </p>
+
+
+            <p>
+                📍 Kaur, Bengkulu, indonesia
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Stress tidak tertolong | Website Portofolio
+        </p>
+
+    </footer>
+
+
+
+
+
+```
+</body></html>
